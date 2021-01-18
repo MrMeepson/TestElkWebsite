@@ -212,6 +212,30 @@ table, tr, td {
     z-index: 999;
 }
 
+#social-media-link-container {
+    font-size: 2.5rem;
+}
+
+.social-media-link {
+    display: block;
+    position: absolute;
+    right: calc(2.5% + 0.5rem);
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    transition: 100ms;
+    z-index: 999;
+}
+
+.social-media-link:hover {
+    border-radius: 35%;
+}
+
 #social-media-side-bar {
     position: fixed;
     left: calc(10% - 2rem);
@@ -410,8 +434,78 @@ table, tr, td {
     font-weight: bold;
 }
 
+.leader-pic-grid-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.leader-pic-block {
+    background: var(--dark_accent);
+    color: var(--light_text);
+    text-align: center;
+    width: 15rem;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    margin: 1rem 0.5rem;
+    border: 4px solid var(--acccent_color);
+}
+
+.leader-picture {
+    width: 100%;
+}
+
+.leader-name {
+    font-size: 1.75rem;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+.leader-years-block {
+    display: block;
+    color: var(--acccent_color);
+}
+
+.leader-start-year, .leader-end-year {
+    display: inline;
+}
+
+.leader-end-year::before {
+    content: ' - ';
+}
+
+.address-block {
+    margin-left: 1rem;
+}
+
+.address-title {
+    font-weight: 600;
+}
+
+.address-title::after {
+    content: ':';
+}
+
+.address-location {
+    margin-left: 1.5rem;
+}
+
 .text-bold {
     font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row-flexbox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-height: 25rem) {
